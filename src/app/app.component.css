@@ -1,0 +1,18 @@
+
+a {
+    font-size: large;
+    color: blue;
+    /* display: block; */
+    text-decoration:dashed;
+}
+
+
+.router-link-active{
+  font-size: x-large;
+  color: red;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}

@@ -1,0 +1,18 @@
+<input type="text" [(ngModel)]="name">
+
+<br>
+<br>
+<ng-container *ngIf="name==='Noam'; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate>
+    <p>Haide Noam</p>
+</ng-template>
+<ng-template #elseTemplate>
+    <ng-container *ngIf="name==='Omer'; else elseTemplate2">
+        <p>Haide Omer</p>
+    </ng-container>
+    <ng-template #elseTemplate2>
+            <p>Kobi</p>
+    </ng-template>
+    
+</ng-template>
+

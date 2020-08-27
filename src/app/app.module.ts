@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { OneComponent } from './componets/one/one.component';
+import { TwoComponent } from './componets/two/two.component';
+import { ThreeComponent } from './componets/three/three.component';
+import {MatButtonModule} from '@angular/material/button';
+import {FormsModule} from '@angular/forms';
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OneComponent,
+    TwoComponent,
+    ThreeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
